@@ -1,0 +1,113 @@
+body {
+  background: #2980b9;
+  background: -webkit-linear-gradient(to bottom, #ffffff, #6dd5fa, #2980b9);
+  background: linear-gradient(to bottom, #ffffff, #6dd5fa, #2980b9);
+}
+
+#survey-form {
+  background-color: rgba(56, 63, 255, 0.295);
+  width: 750px;
+  margin: auto;
+  padding: 25px;
+  font-size: 20px;
+  font-family: "Balsamiq Sans", cursive;
+  border-radius: 10px;
+}
+
+#img-cropper {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    align-content: center;
+    float: left;
+    top: -70px;
+    left: 400px;
+  }
+  
+#logo{
+    
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+
+#name,
+#email,
+#number,
+#dropdown,
+#job-post,
+#more-info {
+  width: 730px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: "Balsamiq Sans", cursive;
+  border-radius: 8px;
+  background-color: rgb(227, 242, 255);
+  margin: 8px 0 20px;
+  padding: 8px;
+}
+
+#survey-form input:focus,
+#more-info:focus {
+  outline: 0;
+  background-color: rgb(255, 255, 255);
+  cursor: text;
+}
+
+#dropdown:focus,
+#job-post:focus {
+  outline: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+#title {
+  text-align: center;
+  font-family: cursive;
+  margin-left: 100px;
+}
+
+#description {
+  font-size: 18px;
+  text-align: center;
+  font-family: cursive;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+#dropdown,
+#job-post {
+  width: 746px;
+  cursor: pointer;
+}
+
+#opt3,
+#opt2-work,
+#lst-check {
+  margin-bottom: 20px;
+}
+.check-opt {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: rgb(182, 88, 88);
+}
+
+#submit {
+  text-transform: capitalize;
+  font-size: 18px;
+  border: none;
+  font-family: "Balsamiq Sans", cursive;
+  padding: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background: linear-gradient(to bottom, #ffd9d9, #bbc3f5, #a7d4f1);
+}
