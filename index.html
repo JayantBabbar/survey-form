@@ -5,146 +5,234 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Survey Form</title>
   </head>
   <body>
-    
-    
     <h1 id="title">ShrewdLearner Survey Form</h1>
-    <div id="img-cropper"><img src="./ShrewdLearner-Logo.png" alt="logo" id="logo"></div>
+    <div id="img-cropper">
+      <img src="./ShrewdLearner-Logo.png" alt="logo" id="logo" />
+    </div>
     <p id="description">
       Thank you for taking the time to help us improve the platform
     </p>
-    <div id="form-div">
-      <form id="survey-form">
-        <label id="name-label" for="username">Name </label><br />
-        <input
-          type="text"
-          id="name"
-          name="username"
-          placeholder="Enter Your Name"
-          required
-        /><br />
-        <label id="email-label" for="usermail">Email </label><br />
-        <input
-          type="email"
-          id="email"
-          name="usermail"
-          placeholder="Enter Your Email"
-          required
-        /><br />
-        <label id="number-label" for="age">Age</label><br />
-        <input
-          type="number"
-          id="number"
-          name="age"
-          min="1"
-          max="100"
-          placeholder="Enter Your Age"
-          required
-        /><br />
-        <label for="drop">Which option best describes your current role?</label
-        ><br />
-        <select id="dropdown" name="drop required">
-          <option value="Full Time Job">Full Time Job</option>
-          <option value="Student">Student</option>
-          <option value="Part Time Job">Part Time Job</option>
-          <option value="Full Time Learner">Full Time Learner</option>
-          <option value="Prefer not to say">Prefer Not To Say</option>
-          <option value="Others">Others</option></select
-        ><br />
 
-        <label for="share">Would you recommend ShrewdLearner to a friend?</label
-        ><br />
-        <input
-          type="radio"
-          id="opt1"
-          name="share"
-          value="Definitely"
-          required
-        />
-        <label for="Definitely">Definitely</label><br />
-        <input type="radio" id="opt2" name="share" value="May-be" required />
-        <label for="May-be">May Be</label><br />
-        <input type="radio" id="opt3" name="share" value="No" required />
-        <label for="No">No</label><br />
-        <label for="work">Do you have an account on any Social Media Platform?</label><br />
-        <input type="radio" id="opt1-work" name="work" value="yes" required />
-        <label for="yes">Yes</label><br />
-        <input type="radio" id="opt2-work" name="work" value="no" required />
-        <label for="no">No</label><br />
-      <div id="for-job">
-        <label for="apply">In which course you have enrolled or willing to enroll?</label><br />
-        <select name="apply" id="job-post">
-          <option value="Front-end developer">Front-end developer</option>
-          <option value="Back-end developer">Back-end developer</option>
-          <option value="Cloud developer">Cloud developer</option>
-          <option value="Data Scientist">Data Scientist</option>
-          <option value="Full Stack developer">
-            Full Stack Developer
-          </option></select
-        ><br />
-        <label for="skills"
-          >Programming Languages and technologies you Know?</label
-        ><br />
-        <input type="checkbox" class="check-opt" name="skill1" value="C++/C" /><label for="skill1"
-          >C++/C</label
-        ><br />
-        <input type="checkbox" class="check-opt" name="skill2" value="Java" /><label for="skill2"
-          >Java</label
-        ><br />
-        <input type="checkbox" class="check-opt" name="skill3" value="JavaScript" /><label
-          for="skill3"
-          >JavaScript</label
-        ><br />
-        <input type="checkbox" class="check-opt" name="skill4" value="Pyhton" /><label
-          for="skill4"
-          >Python</label
-        ><br />
-        <input type="checkbox" class="check-opt" name="skill5" value="Flutter" /><label
-          for="skill5"
-          >Flutter</label
-        ><br />
-        <input type="checkbox" class="check-opt" name="skill6" value="React.js" /><label
-          for="skill6"
-          >React.js</label
-        ><br />
-        <input type="checkbox" class="check-opt" name="skill7" value="Bootstrap" /><label
-          for="skill7"
-          >Bootstrap</label
-        ><br />
-        <input type="checkbox" class="check-opt" name="skill8" value="Wordpress" /><label
-          for="skill8"
-          >Wordpress</label
-        ><br />
-        <input type="checkbox" class="check-opt" name="skill9" value="Android Studio" /><label
-          for="skill9"
-          >Android Studio</label
-        ><br />
-        <input type="checkbox"  class="check-opt" id="lst-check" name="skill10" value="Other Skills" /><label
-          for="skill10"
-          >Other Skills</label
-        >
+    <!-- Form container -->
+    <div id="form-div">
+      <!-- form starts -->
+
+      <form id="survey-form">
+        <!-- Input Name -->
+        <div class="your-name">
+          <div class="lab">
+            <label id="name-label" for="username">Name </label>
+          </div>
+          <div class="infield">
+            <input
+              type="text"
+              id="name"
+              name="username"
+              placeholder="Enter Your Name"
+              required
+            />
+          </div>
         </div>
 
-        <label for="txtar1"
-          >Anything else you want to share about yourself?</label
-        ><br />
-        <textarea
-          name="Txtar1"
-          id="more-info"
-          cols="30"
-          rows="10"
-          placeholder="Tell us more about yourself....."
-        required></textarea
-        ><br />
+        <!-- Input Email -->
+        <div class="your-email">
+          <div class="lab">
+            <label id="email-label" for="usermail">Email </label><br />
+          </div>
+          <div class="infield">
+            <input
+              type="email"
+              id="email"
+              name="usermail"
+              placeholder="Enter Your Email"
+              required
+            />
+          </div>
+        </div>
 
-        <input id="submit" type="submit" value="submit" /><br />
+        <!-- Input Age -->
+        <div class="your-age">
+          <div class="lab">
+            <label id="number-label" for="age">Age</label><br />
+          </div>
+          <div class="infield">
+            <input
+              type="number"
+              id="number"
+              name="age"
+              min="1"
+              max="100"
+              placeholder="Enter Your Age"
+              required
+            />
+          </div>
+        </div>
+
+        <!--Asking about their Current Job  -->
+        <div class="current-job">
+          <div class="lab">
+            <label for="drop"
+              >Which option best describes your current role?</label
+            >
+          </div>
+          <select id="dropdown" name="drop required">
+            <option value="Full Time Job">Full Time Job</option>
+            <option value="Student">Student</option>
+            <option value="Part Time Job">Part Time Job</option>
+            <option value="Full Time Learner">Full Time Learner</option>
+            <option value="Prefer not to say">Prefer Not To Say</option>
+            <option value="Others">Others</option>
+          </select>
+        </div>
+
+        <!-- Asking to share -->
+        <div class="share">
+          <div class="lab">
+            <label for="share"
+              >Would you recommend ShrewdLearner to a friend?</label
+            >
+          </div>
+          <input
+            type="radio"
+            id="opt1"
+            name="share"
+            value="Definitely"
+            required
+          />
+          <label for="Definitely">Definitely</label><br />
+          <input type="radio" id="opt2" name="share" value="May-be" required />
+          <label for="May-be">May Be</label><br />
+          <input type="radio" id="opt3" name="share" value="No" required />
+          <label for="No">No</label><br />
+        </div>
+
+        <!-- Social Media accounts -->
+        <div class="social">
+          <label for="work"
+            >Do you have an account on any Social Media Platform?</label
+          ><br />
+          <input type="radio" id="opt1-work" name="work" value="yes" required />
+          <label for="yes">Yes</label><br />
+          <input type="radio" id="opt2-work" name="work" value="no" required />
+          <label for="no">No</label><br />
+        </div>
+
+        <!-- Courses List -->
+        <div id="for-job">
+          <label for="apply"
+            >In which course you have enrolled or willing to enroll?</label
+          ><br />
+          <select name="apply" id="job-post">
+            <option value="Front-end developer">Front-end developer</option>
+            <option value="Back-end developer">Back-end developer</option>
+            <option value="Cloud developer">Cloud developer</option>
+            <option value="Data Scientist">Data Scientist</option>
+            <option value="Full Stack developer">Full Stack Developer</option>
+          </select>
+        </div>
+
+        <!-- Checkboxes for skills -->
+        <div class="your-skills">
+          <div class="lab">
+            <label for="skills"
+              >Programming Languages and technologies you Know?</label
+            >
+          </div>
+          <input
+            type="checkbox"
+            class="check-opt"
+            name="skill1"
+            value="C++/C"
+          /><label for="skill1">C++/C</label><br />
+          <input
+            type="checkbox"
+            class="check-opt"
+            name="skill2"
+            value="Java"
+          /><label for="skill2">Java</label><br />
+          <input
+            type="checkbox"
+            class="check-opt"
+            name="skill3"
+            value="JavaScript"
+          /><label for="skill3">JavaScript</label><br />
+          <input
+            type="checkbox"
+            class="check-opt"
+            name="skill4"
+            value="Pyhton"
+          /><label for="skill4">Python</label><br />
+          <input
+            type="checkbox"
+            class="check-opt"
+            name="skill5"
+            value="Flutter"
+          /><label for="skill5">Flutter</label><br />
+          <input
+            type="checkbox"
+            class="check-opt"
+            name="skill6"
+            value="React.js"
+          /><label for="skill6">React.js</label><br />
+          <input
+            type="checkbox"
+            class="check-opt"
+            name="skill7"
+            value="Bootstrap"
+          /><label for="skill7">Bootstrap</label><br />
+          <input
+            type="checkbox"
+            class="check-opt"
+            name="skill8"
+            value="Wordpress"
+          /><label for="skill8">Wordpress</label><br />
+          <input
+            type="checkbox"
+            class="check-opt"
+            name="skill9"
+            value="Android Studio"
+          /><label for="skill9">Android Studio</label><br />
+          <input
+            type="checkbox"
+            class="check-opt"
+            id="lst-check"
+            name="skill10"
+            value="Other Skills"
+          /><label for="skill10">Other Skills</label>
+        </div>
+
+        <!-- TextArea for more -->
+        <div class="txtArea">
+          <div class="lab">
+            <label for="txtar1"
+              >Anything else you want to share about yourself?</label
+            >
+          </div>
+          <div class="infield">
+            <textarea
+              name="Txtar1"
+              id="more-info"
+              cols="30"
+              rows="10"
+              placeholder="Tell us more about yourself....."
+              required
+            ></textarea>
+          </div>
+        </div>
+        <div class="btn">
+          <input id="submit" type="submit" value="submit" />
+        </div>
       </form>
     </div>
-    <script src="app.js" ></script>
+    <script src="app.js"></script>
   </body>
 </html>
