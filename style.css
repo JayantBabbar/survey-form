@@ -4,23 +4,25 @@ body {
   background: linear-gradient(to bottom, #ffffff, #6dd5fa, #2980b9);
 }
 
-#form-div{
-  width:70%;
-  margin-left: 13%;
 
+.head-text{
+  display: block;
+  text-align: center;
+  font-family: cursive;
+  
 }
-
 
 #img-croper{
   display: inline-block;
-  text-align: center;
+  margin: auto;
 
 }
 #survey-form {
   background-color: rgba(56, 63, 255, 0.295);
   padding: 25px;
   font-size: 20px;
-  width:100%;
+  max-width: 40em;
+  margin: auto;
   height:fit-content;
   font-family: "Balsamiq Sans", cursive;
   border-radius: 10px;
@@ -31,7 +33,9 @@ body {
 #logo{
     
     display: block;
-    margin: 0 ;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
     height: 100px;
 }
 
@@ -65,16 +69,9 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
-#title {
-  text-align: center;
-  font-family: cursive;
-  margin-left: 100px;
-}
 
 #description {
   font-size: 18px;
-  text-align: center;
-  font-family: cursive;
   font-style: italic;
   margin-bottom: 30px;
 }
@@ -114,9 +111,3 @@ body {
 }
 
 
-@media screen and (max-width: 600px) {
-  .lab, .infield, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-}
