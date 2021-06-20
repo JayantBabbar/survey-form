@@ -5,35 +5,34 @@ body {
 }
 
 #form-div{
+  width:70%;
+  margin-left: 13%;
+
+}
+
+
+#img-croper{
   display: inline-block;
-  margin: 0 100px;
+  text-align: center;
+
 }
 #survey-form {
   background-color: rgba(56, 63, 255, 0.295);
   padding: 25px;
   font-size: 20px;
+  width:100%;
+  height:fit-content;
   font-family: "Balsamiq Sans", cursive;
   border-radius: 10px;
 }
 
-#img-cropper {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    overflow: hidden;
-    border-radius: 50%;
-    align-content: center;
-    float: left;
-    top: 10px;
-    left: 400px;
-  }
+
   
 #logo{
     
     display: block;
     margin: 0 ;
-    height: 100%;
-    width: auto;
+    height: 100px;
 }
 
 #name,
@@ -42,7 +41,7 @@ body {
 #dropdown,
 #job-post,
 #more-info {
-  width: 730px;
+  width: 98%;
   border: none;
   cursor: pointer;
   font-size: 18px;
@@ -82,7 +81,7 @@ body {
 
 #dropdown,
 #job-post {
-  width: 746px;
+  width: 100%;
   cursor: pointer;
 }
 
@@ -116,7 +115,7 @@ body {
 
 
 @media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
+  .lab, .infield, input[type=submit] {
     width: 100%;
     margin-top: 0;
   }
