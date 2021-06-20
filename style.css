@@ -31,7 +31,7 @@ body {
 
   
 #logo{
-    
+    width:auto;
     display: block;
     border-radius: 50%;
     margin-left: auto;

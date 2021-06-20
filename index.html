@@ -16,7 +16,7 @@
   <body>
 
     <div id="img-cropper">
-      <img src="./ShrewdLearner-Logo.png" alt="logo" id="logo" />
+      <img src="./ShrewdLearner-Logo.png" width="600" height="600" alt="logo" id="logo" />
     </div>
     <div class="head-text">
       <h1 id="title">ShrewdLearner Survey Form</h1>
@@ -113,11 +113,11 @@
             value="Definitely"
             required
           />
-          <label for="Definitely">Definitely</label><br />
+          <label for="opt1">Definitely</label><br />
           <input type="radio" id="opt2" name="share" value="May-be" required />
-          <label for="May-be">May Be</label><br />
+          <label for="opt2">May Be</label><br />
           <input type="radio" id="opt3" name="share" value="No" required />
-          <label for="No">No</label><br />
+          <label for="opt3">No</label><br />
         </div>
 
         <!-- Social Media accounts -->
@@ -126,9 +126,9 @@
             >Do you have an account on any Social Media Platform?</label
           ><br />
           <input type="radio" id="opt1-work" name="work" value="yes" required />
-          <label for="yes">Yes</label><br />
+          <label for="opt1-work">Yes</label><br />
           <input type="radio" id="opt2-work" name="work" value="no" required />
-          <label for="no">No</label><br />
+          <label for="opt2-work">No</label><br />
         </div>
 
         <!-- Courses List -->
@@ -155,64 +155,63 @@
           <input
             type="checkbox"
             class="check-opt"
-            name="skill1"
+            id="skill1"
             value="C++/C"
           /><label for="skill1">C++/C</label><br />
           <input
             type="checkbox"
             class="check-opt"
-            name="skill2"
+            id="skill2"
             value="Java"
           /><label for="skill2">Java</label><br />
           <input
             type="checkbox"
             class="check-opt"
-            name="skill3"
+            id="skill3"
             value="JavaScript"
           /><label for="skill3">JavaScript</label><br />
           <input
             type="checkbox"
             class="check-opt"
-            name="skill4"
+            id="skill4"
             value="Pyhton"
           /><label for="skill4">Python</label><br />
           <input
             type="checkbox"
             class="check-opt"
-            name="skill5"
+            id="skill5"
             value="Flutter"
           /><label for="skill5">Flutter</label><br />
           <input
             type="checkbox"
             class="check-opt"
-            name="skill6"
+            id="skill6"
             value="React.js"
           /><label for="skill6">React.js</label><br />
           <input
             type="checkbox"
             class="check-opt"
-            name="skill7"
+            id="skill7"
             value="Bootstrap"
           /><label for="skill7">Bootstrap</label><br />
           <input
             type="checkbox"
             class="check-opt"
-            name="skill8"
+            id="skill8"
             value="Wordpress"
           /><label for="skill8">Wordpress</label><br />
           <input
             type="checkbox"
             class="check-opt"
-            name="skill9"
+            id="skill9"
             value="Android Studio"
           /><label for="skill9">Android Studio</label><br />
           <input
             type="checkbox"
             class="check-opt"
             id="lst-check"
-            name="skill10"
             value="Other Skills"
-          /><label for="skill10">Other Skills</label>
+          /><label for="lst-check">Other Skills</label>
         </div>
 
         <!-- TextArea for more -->
@@ -238,6 +237,5 @@
         </div>
       </form>
     </div>
-    <script src="app.js"></script>
   </body>
 </html>
